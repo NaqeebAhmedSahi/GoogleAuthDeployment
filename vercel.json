@@ -20,7 +20,10 @@
       },
       {
         "src": "/(.*)",
-        "dest": "client"
+        "dest": "client",
+        "headers": {
+          "Cache-Control": "s-maxage=0"
+        }
       }
     ]
   }
